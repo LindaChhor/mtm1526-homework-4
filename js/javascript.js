@@ -2,14 +2,16 @@
 
 $(document).ready(function () {
 
+	
+
 	$('.tab-buttons a').on('click',function (e) {
-	var tabToShow = $(this).attr('href');
+		
+		var tabToShow = $(this).attr('href');
 	
 	$('.slide-group img').hide();
-	$(this).css('background-color','#000');
-	$(tabToShow).show();
+	$(tabToShow).fadeToggle(500);
 	
-$('.slides #tab1').fadeOut(500, function() { 
+/*$('.slides #tab1').fadeOut(500, function() { 
 			$('.slides img') //.eq(next).fadeIn();
 			
 			.fadeIn(500)
@@ -19,9 +21,17 @@ $('.slides #tab1').fadeOut(500, function() {
 		// $('.slides img').eq(next).addClass('current');
 		$(this).removeClass('current')
 		console.log(next);
-});
+});*/
 
 
+	});
+	
+	$('.tab-buttons li').on('click',function (e) {
+		
+	$('.tab-buttons .current').removeClass('current');	
+	
+	$(this).addClass('current');
+	
 	});
 });
 

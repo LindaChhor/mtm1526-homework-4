@@ -46,11 +46,6 @@ nav a:active {
 	color: #000;
 }
 
-.current {
-	z-index: 10;
-	display: block;
-}
-
 #home {
 	position:absolute;
 	z-index: 500;
@@ -77,4 +72,8 @@ nav a:active {
 	z-index: 500;
 	left: 190px;
 	top: 0;
+}
+
+.current {
+	background-color: #C03;
 }
