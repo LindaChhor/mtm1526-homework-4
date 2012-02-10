@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+.slide-group {
+	width: 570px;
+	height: 300px;
+	margin: 25px auto;
+	position: relative;
+}
+
+.tab-buttons {
+	margin: 0;
+	padding: 0;
+	width: 35%;
+}
+ 
+li {
+	display: inline-block;
+}
+
+nav ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	
+	list-style-type: none;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+	display: block;
+	margin: 0;
+	padding: 0.75em 30px;
+	zoom: 1;
+	
+	color: #CCC;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+	background-color: #FCF;
+	color: #000;
+}
+
+.current {
+	z-index: 10;
+	display: block;
+}
+
+#home {
+	position:absolute;
+	z-index: 500;
+	left: 0;
+	top: 0;
+}
+
+#about {
+	position:absolute;
+	z-index: 500;
+	left: 60px;
+	top: 0;
+}
+
+#product {
+	position:absolute;
+	z-index: 500;
+	left: 130px;
+	top: 0;
+}
+
+#contact {
+	position:absolute;
+	z-index: 500;
+	left: 190px;
+	top: 0;
+}
